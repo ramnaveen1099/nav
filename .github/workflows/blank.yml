@@ -46,10 +46,10 @@ jobs:
         shell: pwsh
         env:
           Environment: ${{ inputs.Environment }}
-          Property: ${{ inputs.Environment }}
+          Property: ${{ inputs.Property }}
         run: |
           function response{
-            write-Host "Property:: $inputs.Property"
+            write-Host "Property:: $Property"
           }
           $gettingresponse=response
       
