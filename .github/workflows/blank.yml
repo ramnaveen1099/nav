@@ -42,8 +42,6 @@ jobs:
     steps:
       - name: Cloning Input File
         uses: actions/checkout@v3
-      - name: Gettin Credentials
-        shell: pwsh
       - name: Performing Encypt/Decrypt Operation
         shell: pwsh
         env:
