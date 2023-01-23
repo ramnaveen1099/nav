@@ -34,14 +34,15 @@ on:
         - YAML
         - PROPERTY
         - PAYLOAD
- jobs:           
+        
+jobs:           
   Encrypt_Decrypt:
     runs-on: windows-2019
     environment: ${{ inputs.Environment }}
     steps:
       - name: Cloning Input File
         uses: actions/checkout@v3
-      -name: Gettin Credentials
+      - name: Gettin Credentials
         shell: pwsh
       - name: Performing Encypt/Decrypt Operation
         shell: pwsh
